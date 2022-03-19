@@ -1,3 +1,10 @@
+rtl88x2bu (5.8.7.1-2) lernstick-11; urgency=medium
+
+  * [d66921] new upstream version (patches for kernel 5.17)
+  * [b40f33] added .gitignore
+
+ -- Ronny Standtke <ronny.standtke@gmx.net>  Sat, 19 Mar 2022 20:27:39 +0100
+
 rtl88x2bu (5.8.7.1-1) lernstick-11; urgency=medium
 
   * Initial release.
