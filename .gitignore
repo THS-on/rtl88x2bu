@@ -1,0 +1,9 @@
+debian/.debhelper/
+debian/debhelper-build-stamp
+debian/files
+debian/rtl88x2bu-dkms.debhelper.log
+debian/rtl88x2bu-dkms.dkms.debhelper
+debian/rtl88x2bu-dkms.postinst.debhelper
+debian/rtl88x2bu-dkms.prerm.debhelper
+debian/rtl88x2bu-dkms.substvars
+debian/rtl88x2bu-dkms/
