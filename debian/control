@@ -6,5 +6,5 @@ Build-Depends: debhelper (>= 9), dkms
 
 Package: rtl88x2bu-dkms
 Architecture: all
-Depends: ${misc:Depends}
+Depends: ${misc:Depends}, dkms, bc
 Description: DKMS source for rtl88x2bu
