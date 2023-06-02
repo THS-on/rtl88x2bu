@@ -16,9 +16,13 @@ Realtek's 5.6.1.6 source was found bundled with the [Cudy WU1200 AC1200 High Gai
 
 Build confirmed on:
 
-```
-Linux version 5.4.0-4-amd64 (debian-kernel@lists.debian.org) (gcc version 9.2.1 20200203 (Debian 9.2.1-28)) #1 SMP Debian 5.4.19-1 (2020-02-13)
-```
+* Linux version `5.4.0-91-generic` on Linux Mint 20.2 (30 November 2021)
+* Linux version `5.15.89` on Manjaro (3 February 2023)
+* Linux version `5.19` on Ubuntu 22.4
+* Linux version `6.1.0-9-amd64` on Debian Bookworm
+* Linux version `6.1.*` (self compiled) on Debian Bookworm and Ubuntu 22.4
+* Linux version `6.2.*` (self compiled) on Debian Bookworm and Ubuntu 22.4
+* Linux version `6.3.*` (self compiled) on Debian Bookworm and Ubuntu 22.4
 
 ## Using and Installing the Driver
 
@@ -74,6 +78,18 @@ echo "blacklist rtw88_8822bu" > /etc/modprobe.d/rtw8822bu.conf
 ```
 
 And reboot your system.
+
+
+### Secure Boot
+
+Secure Boot will prevent the module from loading as it isn't signed. In order
+to check whether you have secure boot enabled, you couly run  `mokutil
+--sb-state`. If you see something like `SecureBoot disabled`, you do not take
+to setup module signing.
+
+If Secure Boot is enabled on your machine, you either could disable it in BIOS
+or UEFI or you could set up signing the module. How to do so is described
+[here](https://github.com/cilynx/rtl88x2bu/issues/210#issuecomment-1166402943).
 
 
 ## Raspberry Pi Access Point
