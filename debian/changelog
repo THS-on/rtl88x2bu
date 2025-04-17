@@ -1,3 +1,10 @@
+rtl88x2bu (5.8.7.1-5) lernstick-12; urgency=medium
+
+  * new upstream version
+  * change dependencies
+
+ -- Thore Sommer <mail@thson.de>  Thu, 17 Apr 2025 07:00:00 +0200
+
 rtl88x2bu (5.8.7.1-4) lernstick-11; urgency=medium
 
   * new upstream version
