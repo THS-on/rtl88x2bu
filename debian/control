@@ -2,9 +2,9 @@ Source: rtl88x2bu
 Section: kernel
 Priority: optional
 Maintainer: Ronny Standtke <ronny.standtke@gmx.net>
-Build-Depends: debhelper (>= 9), dkms
+Build-Depends: debhelper (>= 9), dh-dkms
 
 Package: rtl88x2bu-dkms
 Architecture: all
-Depends: ${misc:Depends}
+Depends: dkms, bc, ${misc:Depends}
 Description: DKMS source for rtl88x2bu
